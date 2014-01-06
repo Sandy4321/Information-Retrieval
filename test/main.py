@@ -136,5 +136,5 @@ getWords()
 
 #for i in range(N):
 #    print solution[i]+1
-    print solution[i]+1
-    print solution[i]+1
+#    print solution[i]+1
+#    print solution[i]+1
