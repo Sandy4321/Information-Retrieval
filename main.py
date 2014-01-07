@@ -61,11 +61,11 @@ def processData(data,disableStopWords=True):
 			ListOfWord=[]
 			for i in xrange(len(dataToken)):
 				ListOfWord.append(stopWords(dataToken[i]))
-
-			for i in xrange(len(ListOfWord)):
-				stemWord(ListOfWord[i])
 		else:
 			ListOfWord=dataToken
+
+	for i in xrange(len(ListOfWord)):
+		stemWord(ListOfWord[i])
 	return ListOfWord
 
 def score(ListOfQuery,numberOfDoc,ListOfIndexDoc,iteamWithPos):
